@@ -113,11 +113,11 @@ Muestra el estado del repositorio, el log, y los ficheros que hay en el director
 
 Elimina la rama fea/wac01 sin posibilidad de recuperación. ¿Qué comando/s utilizas?
 
-// Respuesta
+git branch -D fea/wac01
 
 Realiza un merge de la rama fea/wac02 en la rama main.
 
-// Respuesta
+git merge fea/wac02
 
 Muestra el estado del repositorio, el log, y los ficheros que hay en el directorio. (Imagen) adjunta la imagen
 
@@ -148,9 +148,14 @@ Posicionate en la rama main, muestra el estado y muestra el contenido del ficher
 
 Realiza un merge de la rama fea/wac02 en la rama main. ¿Qué comando/s utilizas?
 
-// Respuesta
+git checkout main (para volver a la rama main)
+git branch (para asegurarme que estoy en la rama mai)
+git merge fea/wac02 (para hacer el merge)
+git log --oneline --graph --decorate --all (para motrar que se ha hecho el merge correctamente)
 
 Muestra el estado del repositorio, y muestra el contenido del fichero 03.xml. (Imagen visualizando comandos) adjunta la imagen
+
+
 
 Ahora, en la rama main modifica el fichero 03.xml incluyendo un nuevo libro.
 
@@ -183,7 +188,8 @@ Ahora, en la rama main modifica el fichero 03.xml incluyendo un nuevo libro.
 </libreria>
 Agrega al área de stage y realiza commit "Update 03 file. Add book El Hobbit".
 
-// Respuesta
+git add 03.xml
+git commit -m "Update 03 file. Add book El Hobbit"
 
 Agrega un nuevo fichero 04.xml sobre libros ciencia-ficcion, en la rama main.
 
@@ -200,7 +206,21 @@ Agrega un nuevo fichero 04.xml sobre libros ciencia-ficcion, en la rama main.
 </liberia>
 Agrega al área de stage y realiza commit "Add 04 file. Add cienca-ficcion books".
 
-// Respuesta
+touch 04.xml
+echo "<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+        <titulo>El fin de la eternidad</titulo>
+        <autor>Isaac Asimov</autor>
+        <editorial>Edhasa</editorial>
+        <fecha>1955</fecha>
+        <genero>Ciencia ficción</genero>
+        <precio>20</precio>
+    </libro>
+</liberia>" > 04.xml
+git add 04.xml
+git commit -m "Add 04 file. Add cienca-ficcion books"
+
 
 Muestra el estado, log una línea y los ficheros que hay en el directorio. (Imagen visualizando comandos) adjunta la imagen
 
