@@ -3,28 +3,30 @@ Crea una carpeta llamada UT2.2.a.
 
 Inicializa un repositorio local en la carpeta UT2.2.a. ¿Qué comando/s utilizas?
 
- // Respuesta
+ cd desktop
+ git init UT2.2.a
 
 Revisa qué rama se ha creado por defecto. ¿Qué comando/s utilizas?
 
-// Respuesta
+git branch
 
 Renombrar la rama por defecto a main en caso de que tenga otro nombre. ¿Qué comando/s utilizas?
 
- // Respuesta
+git branch -m master main
  
 Agrega un fichero README.md.
+touch README.md
 
-# UT2.2.a
+echo "# UT2.2.a" > README.md
 
 Repositorio de prueba para la tarea 2.2.a
 Agrega el fichero README.md al stage area. ¿Qué comando/s utilizas?
 
- // Respuesta
+ git add README.md
  
 Realiza un commit con el mensaje "Add README". ¿Qué comando/s utilizas?
 
- // Respuesta
+git commit -m "Add README"
  
 Agrega otro fichero 01.xml con siguiente texto.
 
@@ -41,15 +43,31 @@ Agrega otro fichero 01.xml con siguiente texto.
 </libreria>
 Agrega el fichero 01.xml al stage area y realiza el commit "Add file 01.xml" ¿Qué comando/s utilizas?
 
-// Respuesta
+touch 01.xml
+
+echo "<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+        <titulo>El Quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <editorial>Editorial Castalia</editorial>
+        <fecha>1605</fecha>
+        <genero>Novela</genero>
+        <precio>20</precio>
+    </libro>
+</libreria>" > 01.xml
+
+git add 01.xml
+git commit -m "Add file 01.xml"
 
 Agrega una nueva rama llamada y posicionate directamente en ella con el mismo comando fea/wac01. ¿Qué comando/s utilizas? (busca en internet si no lo recuerdas)
 
-// Respuesta
+git checkout -b fea/wac01
+este comando te crea la rama y te posiciona directamente en ella.
 
 En qué rama estas ahora mismo? ¿Qué comando/s utilizas?
 
-// Respuesta
+git branch
 
 Estando en la rama fea/wac01 agrega un fichero `02.xml, y agrega al área de stage y realiza commit "Add file 02".
 
@@ -66,7 +84,7 @@ Estando en la rama fea/wac01 agrega un fichero `02.xml, y agrega al área de sta
 </libreria>
 Muestra el log utilizando solo una línea por commit con opciones gráficas. ¿Qué comando/s utilizas?
 
-// Respuesta
+git log --oneline --graph --decorate --all
 
 Posicionate de nuevo en la rama main, y crea otra rama fea/wac02, posicionandote directamente en ella. Agrega un fichero 03.xml, agrega al área de stage y realiza commit "Add file 03".
 
@@ -83,11 +101,13 @@ Posicionate de nuevo en la rama main, y crea otra rama fea/wac02, posicionandote
 </libreria>
 Posicionate en la rama main y muestra los ficheros que hay en el directorio. ¿Qué comando/s utilizas?
 
-// Respuesta
+git checkout main 
+ls
 
 Realizar un merge de la rama fea/wac01 en la rama main. (Indica los comandos utilizados y explica cada uno de ellos).
 
-// Respuesta
+posiciona en la rama main ejecuto el siguiente comando
+git merge fea/wac01
 
 Muestra el estado del repositorio, el log, y los ficheros que hay en el directorio. (Imagen/gif visualizando los comandos) adjunta la imagen
 
