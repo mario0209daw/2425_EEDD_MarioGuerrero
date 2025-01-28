@@ -107,9 +107,12 @@ ls
 Realizar un merge de la rama fea/wac01 en la rama main. (Indica los comandos utilizados y explica cada uno de ellos).
 
 posiciona en la rama main ejecuto el siguiente comando
+
 git merge fea/wac01
 
-Muestra el estado del repositorio, el log, y los ficheros que hay en el directorio. (Imagen/gif visualizando los comandos) adjunta la imagen
+Muestra el estado del repositorio, el log, y los ficheros que hay en el directorio. (Imagen/gif visualizando los comandos) adjunta la imagen 
+
+[01](img/01.PNG).
 
 Elimina la rama fea/wac01 sin posibilidad de recuperación. ¿Qué comando/s utilizas?
 
@@ -120,6 +123,8 @@ Realiza un merge de la rama fea/wac02 en la rama main.
 git merge fea/wac02
 
 Muestra el estado del repositorio, el log, y los ficheros que hay en el directorio. (Imagen) adjunta la imagen
+
+[02](img/02.PNG)
 
 Vuelve a la rama fea/wac02 y modifica el fichero 03.xml añadiendo un nuevo libro.
 
@@ -146,6 +151,8 @@ Agrega al área de stage y realiza commit "Update 03 file. Add book El Silmarill
 
 Posicionate en la rama main, muestra el estado y muestra el contenido del fichero cat 03.xml. (Imagen visualizando comandos) adjunta la imagen
 
+[03](img/03.PNG)
+
 Realiza un merge de la rama fea/wac02 en la rama main. ¿Qué comando/s utilizas?
 
 git checkout main (para volver a la rama main)
@@ -155,6 +162,7 @@ git log --oneline --graph --decorate --all (para motrar que se ha hecho el merge
 
 Muestra el estado del repositorio, y muestra el contenido del fichero 03.xml. (Imagen visualizando comandos) adjunta la imagen
 
+[04](img/04.PNG)
 
 
 Ahora, en la rama main modifica el fichero 03.xml incluyendo un nuevo libro.
@@ -224,13 +232,22 @@ git commit -m "Add 04 file. Add cienca-ficcion books"
 
 Muestra el estado, log una línea y los ficheros que hay en el directorio. (Imagen visualizando comandos) adjunta la imagen
 
+[05](img/05.PNG)
+
 Vuelve un commit atrás, y muestra el estado, log una línea y los ficheros que hay en el directorio. (Imagen visualizando comandos) adjunta la imagen
+
+[06](img/06.PNG)
+
 
 Vuelve al commit anterior, y muestra el estado, log una línea y los ficheros que hay en el directorio. (Imagen visualizando comandos) adjunta la imagen
 
+[07](img/07.PNG)
+
 Posicionate de nuevo en el último commit, y muestra el estado, log una línea y los ficheros que hay en el directorio. (Imagen visualizando comandos) adjunta la imagen
 
-2. Crear repositorio remoto y subir a GITHUB
+[08](img/08.PNG)
+
+1. Crear repositorio remoto y subir a GITHUB
 Crea un repositorio remoto en GITHUB llamado EEDD_{NombreApellido}_TE2.2 público, vacio, sin nada.
 
 Agrega el repositorio remoto a tu repositorio local. ¿Qué comando/s utilizas?
