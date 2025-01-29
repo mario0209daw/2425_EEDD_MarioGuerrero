@@ -252,23 +252,25 @@ Crea un repositorio remoto en GITHUB llamado EEDD_{NombreApellido}_TE2.2 públic
 
 Agrega el repositorio remoto a tu repositorio local. ¿Qué comando/s utilizas?
 
- // Respuesta
+ git remote add origin https://github.com/mario0209daw/EEDD_MARIOGUERRERO_TE2.2.git
  
 Muestra los repositorios remotos que tienes configurados. ¿Qué comando/s utilizas?
 
- // Respuesta
+ git remote -v
  
 Sube la rama main al repositorio remoto. ¿Qué comando/s utilizas?
 
- // Respuesta
+ git push -u origin main 
  
 Muestra el log de la rama main con opciones gráficas. ¿Qué comando/s utilizas?
 
- // Respuesta
+git log --oneline --graph --decorate --all
  
 Posicionate en la rama fea/wac02 y sube la rama fea/wac02 al repositorio remoto. ¿Qué comando/s utilizas?
 
- // Respuesta
+ git checkout fea/wac02
+
+ git push -u origin fea/wac02
  
 Ahora desde GITHUB (web) en la rama fea\wac02, modifica el fichero 03.xml añadiendo un nuevo libro.
 
@@ -308,23 +310,32 @@ Ahora desde GITHUB (web) en la rama fea\wac02, modifica el fichero 03.xml añadi
 </libreria>
 Realiza un commit con el mensaje "Update 03 file. Add book El hombre bicentenario". (Muestra pantallazo de GITHUB con el commit realizado) adjunta la imagen
 
+[1.2](img/2.1.PNG)
+
 Ahora obten los cambios sin acualizar el repositorio local (git fetch origin).
 
+
 Muestra un log del repositorio local con opciones gráficas. (Incluye imagen) adjunta la imagen
+
+[2.2](img/2.2.PNG)
 
 Ahora actualiza el repositorio local con los cambios del repositorio remoto (git pull origin fea/wac02).
 
 Muestra un log del repositorio local con opciones gráficas. (Incluye imagen) adjunta la imagen
 
+[2.3](img/2.3.PNG)
+
 Haz un merge de la rama fea/wac02 en la rama main. Muestra estado, log, y el contenido fichero 03.xml (Incluye imagen) adjunta la imagen
+
+[2.4](img/2.4.PNG) [2.5](img/2.5.PNG)
 
 Sube la rama main al repositorio remoto. ¿Qué comando/s utilizas?
 
-// Respuesta
+git push origin main
 
 Elimina la rama local fea/wac02 sin posibilidad de recuperación. ¿Qué comando/s utilizas?
 
-// Respuesta
+git branch -d fea/wac02
 
 Elimina la rama remota fea/wac02 sin posibilidad de recuperación (git push origin --delete fea/wac02).
 
@@ -332,9 +343,14 @@ Elimina la rama remota fea/wac02 sin posibilidad de recuperación (git push orig
 
 Muestra desde GITHUB (navegador web) las ramas que tienes el en repositorio remoto. (Incluye imagen) adjunta la imagen
 
+[2.6](img/2.6.PNG)
+
 Para finalizar, muestra el log del repositorio local con opciones gráficas. (Incluye imagen) adjunta la imagen
 
-3. Enlace repositorio remoto
+[2.7](img/2.7.PNG)
+
+1. Enlace repositorio remoto
 Incluye el enlace al repositorio remoto en este punto para que el profesor pueda acceder a él.
- // Enlace al repositorio remoto (en que aparece en la URL del navegador)
+
+https://github.com/mario0209daw/EEDD_MARIOGUERRERO_TE2.2
  
