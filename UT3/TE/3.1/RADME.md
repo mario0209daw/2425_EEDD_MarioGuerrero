@@ -44,16 +44,25 @@ $> which java
 ```
 
 📎 _Adjunta una imagen de los comandos anteriores y responde a las siguientes preguntas_
+[01](img/01.png)
 
     ¿Qué versión de Java tienes instalada?
+    
+    la version 23.0.2
 
     ¿Cuantas versiones de Java tienes instaladas? ¿ Por qué?
 
+    tengo dos versiones, porque las instalé en clase, pero solo me aparece una en git bash
+
     Si tienes más de una versión indica todas las versiones y rutas de instalación.
+
+    tengo tambien insatalada la 21
 
 2. Variables de entorno.
 
    📎 _Adjunta una imagen de las variables de entorno de tu sistema, tanto a nivel de usuario como a nivel de sistema._
+
+   [02](img/02.png)
 
    - Muestra a través de interfaz (Ventana de windows) (Usuarios y sistema) [adjuntar imagen]
    - Muestra a nvel de comandos (Solo usuario) (`set`) [adjuntar imagen]
