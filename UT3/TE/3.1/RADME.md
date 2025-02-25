@@ -64,9 +64,9 @@ $> which java
 
    [02](img/02.png)
 
-   - Muestra a través de interfaz (Ventana de windows) (Usuarios y sistema) [adjuntar imagen]
-   - Muestra a nvel de comandos (Solo usuario) (`set`) [adjuntar imagen]
-   - Muestra el contenido de la variable `PATH` (`echo %PATH%`) y de la variable `JAVA_HOME` (`echo %JAVA_HOME%`)
+   - Muestra a través de interfaz (Ventana de windows) (Usuarios y sistema) [03](img/03.png)
+   - Muestra a nvel de comandos (Solo usuario) (`set`) [04](img/04.jpg)
+   - Muestra el contenido de la variable `PATH` (`echo %PATH%`) y de la variable `JAVA_HOME` (`echo %JAVA_HOME%`) [05](img/05.jpg)
 
 3. Instala el JDK 19 la implementación de Adoptium (Windows)
 
@@ -76,7 +76,7 @@ $> which java
    - Una vez instalado, muestra la versión de Java instalada y la ruta de instalación. (a través de comandos y adjunta una imagen)
      (`java -version` y `where java`)
 
-   - ¿ La versión de Java que te muestra es la 19? ¿ Por qué?
+   - ¿ La versión de Java que te muestra es la 19? ¿Por qué?
 
 4. Configura tu sistema para que utilice la versión de Java 19 como versión por defecto a nivel de usuario. (Si ya lo tienes explica por qué)
 
