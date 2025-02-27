@@ -64,63 +64,97 @@ $> which java
 
    [02](img/02.png)
 
-   - Muestra a través de interfaz (Ventana de windows) (Usuarios y sistema) [03](img/03.png)
-   - Muestra a nvel de comandos (Solo usuario) (`set`) [04](img/04.jpg)
-   - Muestra el contenido de la variable `PATH` (`echo %PATH%`) y de la variable `JAVA_HOME` (`echo %JAVA_HOME%`) [05](img/05.jpg)
+   - Muestra a través de interfaz (Ventana de windows) (Usuarios y sistema) [02](img/03.png)
+   - Muestra a nvel de comandos (Solo usuario) (`set`) [02](img/04.png)
+   - Muestra el contenido de la variable `PATH` (`echo %PATH%`) y de la variable `JAVA_HOME` (`echo %JAVA_HOME%`)
+  [05](img/05.png)
 
 3. Instala el JDK 19 la implementación de Adoptium (Windows)
 
    - Ves a la página de [Adoptium](https://adoptium.net/) y descarga la versión de Java 19 para Windows y la arquitectura de tu PC (x32/x64).
-     (Incluye un gif de la instalación)
+     (Incluye un gif de la instalación)[05](img/06.png)
 
    - Una vez instalado, muestra la versión de Java instalada y la ruta de instalación. (a través de comandos y adjunta una imagen)
-     (`java -version` y `where java`)
+     (`java -version` y `where java`)[05](img/07.png)
 
-   - ¿ La versión de Java que te muestra es la 19? ¿Por qué?
+   - ¿ La versión de Java que te muestra es la 19? ¿ Por qué?
+   - la version qeu aparece es la 21, porque en las variabs de entorno, en java_home tiene la ruta a la version 21.
 
 4. Configura tu sistema para que utilice la versión de Java 19 como versión por defecto a nivel de usuario. (Si ya lo tienes explica por qué)
 
    - ¿ Cómo has configurado tu sistema para que utilice la versión de Java 19 como versión por defecto?
+  
+
+he cambiado la ruta de la variable de entorno JAVA_HOME , y le he puesto la ruta de la version 19.[08](img/08.PNG)
 
 ### 2. Utilización de SDKMan
 
 5. Instala SDKMan en Windows. (_Para ello puedes seguir la guía disponible [aquí](../docs/doc_sdkman.md)_)
 
    - Instala SDKMan en Windows e explica los pasos que has seguido, adjunta una captura final de SDK funcionando.
-
+[2.1](img/2.1.PNG)
    - Muestra la versión de SDKMan instalada
-
+[2.2](img/2.2.PNG)
    - ¿ Dónde se ha instalado SDKMan? ¿ Por qué?
+  
+se ha intalado aqui:
+C:\Users\mario\.sdkman
 
    - Muestra las versiones de Java que tienes instaladas a través de SDKMan
+  
+actualmente no me aparece que tenga ninguna version que aparezaca en sdkman
 
    - ¿ Qué ventajas tiene instalar SDKMan?
+  
+la rapidez a la hora de descargar versiones de java,etc
 
    - ¿ Instala la versión de Jara 8.0_302-zulu a través de SDKMan ?
+[2.3](img/2.3.PNG)
 
    - ¿ Instala la versión de Java 11.0.12-zulu a través de SDKMan ?
+[2.4](img/2.4.PNG)
 
    - ¿ Instala la versión de Java 17.0.0-zulu a través de SDKMan ?
+[2.5](img/2.5.PNG)
 
-6. Configura tu sistema para que utilice la versión de Java 17.0.0 como versión por defecto a nivel de usuario. (Para que las aplicaciones que ejecutes utilicen esta versión de Java)
+1. Configura tu sistema para que utilice la versión de Java 17.0.0 como versión por defecto a nivel de usuario. (Para que las aplicaciones que ejecutes utilicen esta versión de Java)
+
+he cambio la ruta de JAVA_home,para que utilice las versiones de java de sdkman, la ruta es la siguiete:
+C:\Users\mario\.sdkman\candidates\java\current
+[2.6](img/2.6.PNG)
 
    - ¿ Qué tienes hacer o comando tienes que utilizar (SDKMAN) para que una aplicación ejecutada desde la interfaz (Windows o Linux) utilize esa versión de Java?
 
+sdk default java <version que desees>.
+
    - ¿ Qué variable de Entorno tienes que modificar para que una aplicación ejecutada desde la interfaz (Windows o Linux) utilize esa versión de Java?
 
-7. Si necesitas compilar una aplicación de Java desde la terminal, fuera del IDE, y necesita compilarse con la version de Java 8, ¿ Cómo lo harías?
+java_home, como ya he explicado anteriormente, poniendole la ruta C:\Users\mario\.sdkman\candidates\java\current
+ya utilizaria la verion qeu tiene el sdkman predefinida.
+
+1. Si necesitas compilar una aplicación de Java desde la terminal, fuera del IDE, y necesita compilarse con la version de Java 8, ¿ Cómo lo harías?
 
    - ¿ Qué comando de SDKMAN tienes que utilizar para que a nivel de la terminal actual use la versión de Java 8?
+  
+  suponiendo que el sdkamn tiene instalada la version java 8, utilizaria : sdk use java 8
 
    - ¿ Qué comando utilizas para compilar una aplicación de Java ?
+   - 
+  el comando seria : javac <nombreDelaAplicacion>
 
-8. Un proyecto en el que estas trabajando, neceseita la versión de Java 11, pero requieres compilarlo con esa versión, pero no quieres tener siempre que recordar esto, y quieres que se active automáticamente esa versión una vez accedas al directorio del proyecto.
+1. Un proyecto en el que estas trabajando, neceseita la versión de Java 11, pero requieres compilarlo con esa versión, pero no quieres tener siempre que recordar esto, y quieres que se active automáticamente esa versión una vez accedas al directorio del proyecto.
 
    - ¿ Cómo puedes realizar esto con SDKMAN ? (indica los comandos que tienes que utilizar y la configuración de la herramienta)
-
+tengo que crear lo siguient:
+cd /ruta/a/tu/proyecto
+touch .sdkmanrc
+nano .sdkmanrc
+en nano ponemos lo siguiente : java=11.0-open 
+guardamos y cerramos nano
    - Haz una captura de pantalla entrando y saliendo del directorio del proyecto, para ver cono se activa y desactiva una versión y otra de Java.
+[2.6](img/2.7.PNG) [2.6](img/2.8.PNG)
 
-9. Ahora en Eclipse, configura el JDK 17 descargado con SDKMAN, como JDK por defecto.
+1. Ahora en Eclipse, configura el JDK 17 descargado con SDKMAN, como JDK por defecto.
 
    - ¿ Cómo has configurado Eclipse para que utilice el JDK 17 descargado con SDKMAN? (Muestra una captura de pantalla)
 
