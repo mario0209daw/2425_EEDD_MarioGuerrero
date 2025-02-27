@@ -152,15 +152,18 @@ nano .sdkmanrc
 en nano ponemos lo siguiente : java=11.0-open 
 guardamos y cerramos nano
    - Haz una captura de pantalla entrando y saliendo del directorio del proyecto, para ver cono se activa y desactiva una versión y otra de Java.
-[2.6](img/2.7.PNG) [2.6](img/2.8.PNG)
+[2.6](img/2.7.PNG) [2.6](img/2.8.PNG), LO HE HECHO CON ESTAS VERSIONES POR QEU SON LAS QEU TENIA YA DESCARGADAS, Y NO TENGO MAS MEMORIA.
 
 1. Ahora en Eclipse, configura el JDK 17 descargado con SDKMAN, como JDK por defecto.
 
    - ¿ Cómo has configurado Eclipse para que utilice el JDK 17 descargado con SDKMAN? (Muestra una captura de pantalla)
+   [2.9](img/2.9.PNG)
 
    - Inicia un nuevo proyecto (TE21-Paso9) en Eclipse y muestra la versión de Java que aparece por defecto para el Workspace. (Muestra una captura de pantalla)
+   [2.9](img/2.10.PNG)
 
    - Cambia la versión de Java del proyecto para que utilize la versión de Java 8. (Muestra una captura de pantalla)
+   [2.9](img/2.11.PNG)
 
 ### 3. Utilización de JetBrains IntelliJ IDEA y Eclipse
 
@@ -168,10 +171,14 @@ guardamos y cerramos nano
 
 - Ahora al abrir IntellJ IDEA, debe activar esa versión automaticamente, pues detectar la configuración. (Incluye una captura de panntalla o GIF de la configuración))
 
+[3.1](img/3.1.PNG)
+
 11. Importar el proyecto TE21-Paso9 en IntelliJ IDEA que has creado en Eclipse.
 
 - Revisa la configuración de la versión de Java que utiliza el proyecto ¿Es la misma que utiliza Eclipse?. (Muestra una captura de pantalla)
   Explica según tu opinión y en base a la configuración aplicada al proyecto de Eclipse realizada en el paso 9, si debe ser la misma versión de JDK en ambos proyectos o si esto depende de otras configuraciones extenas al proyecto.
+
+  me deja abrirlo y modificarlo, esto se deba que es uan version inferior a la 11 por eso me deja abrirlo.
 
 12. Crea un nuevo proyecto en IntelliJ IDEA (TE21-Paso12) que se guarde en la carpeta TE21-Paso12.
 
