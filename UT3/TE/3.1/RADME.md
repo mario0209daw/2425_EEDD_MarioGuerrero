@@ -177,7 +177,7 @@ guardamos y cerramos nano
 
 - Revisa la configuración de la versión de Java que utiliza el proyecto ¿Es la misma que utiliza Eclipse?. (Muestra una captura de pantalla)
   Explica según tu opinión y en base a la configuración aplicada al proyecto de Eclipse realizada en el paso 9, si debe ser la misma versión de JDK en ambos proyectos o si esto depende de otras configuraciones extenas al proyecto.
-
+[3.1](img/3.2.PNG)
   me deja abrirlo y modificarlo, esto se deba que es uan version inferior a la 11 por eso me deja abrirlo.
 
 12. Crea un nuevo proyecto en IntelliJ IDEA (TE21-Paso12) que se guarde en la carpeta TE21-Paso12.
@@ -185,19 +185,23 @@ guardamos y cerramos nano
 - Configura el proyecto para que utilice la versión de Java 17 descargada con SDKMAN. (Muestra una captura de pantalla de la configuración del fichero .sdkmanrc)
 - Agrega otro módulo al proyecto, que se guarde en la carpeta Modulo2.
 - Agrega otro módulo al proyecto, que se guarde en la carpeta Modulo3.
+   [3.1](img/3.3.PNG)[3.1](img/3.4.PNG)
 
-(Muestra una captura de pantalla de la estructura del proyecto en IntelliJ IDEA)
+
+(Muestra una captura de pantalla de la estructura del proyecto en IntelliJ IDEA)[3.1](img/3.4.PNG)
 
 - Vincula el proyecto principal, con los módulos 2 y 3. (Muestra una captura de pantalla de la configuración de los módulos)
 
-13. En el módulo 2, crea una clase que se llame `Utilidades` y que tenga un método que se llame `calculadora` y que tenga los métodos de suma, resta, multiplicación y división.
+1.  En el módulo 2, crea una clase que se llame `Utilidades` y que tenga un método que se llame `calculadora` y que tenga los métodos de suma, resta, multiplicación y división.
 
 (Muestra el código de la clase `Utilidades` con un bloque de código)
+[3.1](img/3.5.PNG)
 
 14. En el módulo 3, crea una clase llamada `Conversor` que tenga un método que se llame `Texto_to_Uppercase` que convierta un texto a mayúsculas, y otro método que se llame `Texto_to_Lowercase` que convierta un texto a minúsculas.
 
-(Muestra el código de la clase `Conversor` con un bloque de código)
+(Muestra el código de la clase `Conversor` con un bloque de código)[3.1](img/3.5.PNG)
 
 15. En el módulo principal, crea una clase llamada `Principal` que tenga un método `main` que instancie las clases `Utilidades` y `Conversor` y que muestre por consola el resultado de las operaciones de la clase `Utilidades` y el resultado de las operaciones de la clase `Conversor`.
 
 (Muestra un gif donde se muestre la ejecución del programa, en depuración y se visualice que no existen errores de compilación ni ejecución).
+[3.1](img/1.0.1.gif)
