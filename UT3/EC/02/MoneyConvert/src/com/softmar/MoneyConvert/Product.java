@@ -28,7 +28,7 @@ public class Product {
         this.price = price;
     }
 
-    public static Money applyDiscount(Money price, double porcentage){
+    public Money applyDiscount(Money price, double porcentage){
         double discountAmount = price.getAmount().doubleValue() * (porcentage / 100);
         return price.minus(discountAmount);
     }
