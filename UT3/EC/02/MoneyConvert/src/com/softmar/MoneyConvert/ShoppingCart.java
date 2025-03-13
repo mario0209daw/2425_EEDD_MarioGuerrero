@@ -16,9 +16,8 @@ public class ShoppingCart {
         System.out.println("el precio del laptop sin descuento es :"+laptop.price);
         System.out.println("el precio del laptop con descuento es :"+laptop.applyDiscount(laptop.price,10));
         System.out.println("el precio del smartphone sin descuento es :"+smartphone.price);
-        System.out.println("el precio del smatphone con descuento es :"+smartphone.applyDiscount(smartphone.price,10));
+        System.out.println("el precio del smatphone con descuento es :"+smartphone.applyDiscount(smartphone.price,20));
         System.out.println("el precio de los auriculares sin descuento es :"+auriculares.price);
-        System.out.println("el precio de los auriculares con descuento es :"+auriculares.applyDiscount(auriculares.price,10));
     }
 
 
