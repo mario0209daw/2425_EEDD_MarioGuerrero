@@ -17,5 +17,6 @@ public class PruebaA {
         System.out.println("suma :" +CurrencyConverter.addMoney(usd1,usd2));
         System.out.println("resta : "+CurrencyConverter.subtractMoney(usd1,usd2));
         CurrencyConverter.compareAmounts(usd1,usd2);
+
     }
 }

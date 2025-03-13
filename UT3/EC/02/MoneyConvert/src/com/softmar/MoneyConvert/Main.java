@@ -23,5 +23,6 @@ public class Main {
         System.out.println(CurrencyConverter.addMoney(usdAmount1,usdAmount));
         System.out.println(CurrencyConverter.subtractMoney(usdAmount,usdAmount1));
         CurrencyConverter.compareAmounts(usdAmount1,usdAmount);
+        System.out.println(Product.applyDiscount(usdAmount,20));
     }
 }
