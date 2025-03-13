@@ -4,8 +4,8 @@ import org.joda.money.CurrencyUnit;
 import org.joda.money.Money;
 
 public class Product {
-    public  String name;
-    public  Money price;
+    public String name;
+    public Money price;
 
     public Product(String name, Money price) {
         this.name = name;
@@ -28,7 +28,7 @@ public class Product {
         this.price = price;
     }
 
-    public Money applyDiscount(Money price, double porcentage){
+    public Money applyDiscount(Money price, double porcentage) {
         double discountAmount = price.getAmount().doubleValue() * (porcentage / 100);
         return price.minus(discountAmount);
     }

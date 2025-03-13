@@ -19,9 +19,5 @@ public class Main {
 
         // Mostrar resultado
         System.out.println(usdAmount + " equivale a " + eurAmount);
-
-        System.out.println(CurrencyConverter.addMoney(usdAmount1,usdAmount));
-        System.out.println(CurrencyConverter.subtractMoney(usdAmount,usdAmount1));
-        CurrencyConverter.compareAmounts(usdAmount1,usdAmount);
     }
 }
