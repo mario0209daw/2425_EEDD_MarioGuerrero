@@ -110,7 +110,10 @@ Esto generará un archivo `.jar` y lo instalará en el repositorio local.
 En la carpeta `.m2\repository` tendrás instalado el archivo `.jar` de tu proyecto, con la estructura de carpetas de package. En este caso, `com/{apellido1}/{nombre}/utilidades/1.1/utilidades-1.1.jar`.
 
 > Incluye una captura de pantalla donde se visualice la estructura de carpetas y el nombre de carpeta raiz del repositorio local.
+![](_res/img/0.png)
 > `Crea una carpeta llamada "_resources/img" y guarda las capturas. Vincula estas imágenes al `.
+
+
 
 **Repetir proceso para cada versión de la librería**.
 
@@ -118,12 +121,13 @@ En la carpeta `.m2\repository` tendrás instalado el archivo `.jar` de tu proyec
 
 - Cambia la versión en el archivo `pom.xml` y despliega la nueva versión en el repositorio local.
 - Adjunta una captura de pantalla.
+![](_res/img/1.2.png)
 
 > Version 1.3
 
 - Cambia la versión en el archivo `pom.xml` y despliega la nueva versión en el repositorio local.
 - Adjunta una captura de pantalla.
-
+![](_res/img/1.3.png)
 
 
 #### 2. Agregar repositorio maven hosted
@@ -189,6 +193,7 @@ Esto generará un archivo `.jar` y lo desplegará en el repositorio local.
 Accede a la dirección del repositorio maven hosted y comprueba que el archivo se ha subido correctamente, utilizando las credenciales de acceso `alumnouser` y `alumnouser` (password).
 
 > Incluye una captura de pantalla donde se visualice el archivo `.jar` en el repositorio maven hosted.
+![](_res/img/1.0.png)
 
 **Repetir proceso para cada versión de la librería**.
 
@@ -197,10 +202,12 @@ Accede a la dirección del repositorio maven hosted y comprueba que el archivo s
 - Cambia la versión en el archivo `pom.xml` y despliega la nueva versión en el repositorio local.
 - Adjunta una captura de pantalla.
 
+![](_res/img/1.2.png)
+
 > Version 1.3
 
 - Cambia la versión en el archivo `pom.xml` y despliega la nueva versión en el repositorio local.
 - Adjunta una captura de pantalla.
 
 
-
+![](_res/img/1.3.png)
