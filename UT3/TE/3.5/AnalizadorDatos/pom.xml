@@ -4,18 +4,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.guerrero.mario</groupId>
-    <artifactId>UtilidadesMaven</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <groupId>com.mario.guerrero</groupId>
+    <artifactId>AnalizadorDatos</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-    <distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.Vazquez.Rando</groupId>
+            <artifactId>utilidadesMaven</artifactId>
+            <version>1.3-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
         <repository>
             <id>demo-repo</id>
             <name>repositorio para clase EEDD</name>
-           <url>http://10.10.0.253:8081/repository/demo-repo/</url>
+            <url>http://10.10.0.253:8081/repository/demo-repo/</url>
             <!--<url>http://157.245.38.33:8081/repository/demo-repo/</url>-->
         </repository>
-    </distributionManagement>
+    </repositories>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
