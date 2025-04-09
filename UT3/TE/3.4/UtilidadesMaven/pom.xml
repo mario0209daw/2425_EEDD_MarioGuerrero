@@ -12,8 +12,8 @@
         <repository>
             <id>demo-repo</id>
             <name>repositorio para clase EEDD</name>
-           <url>http://10.10.0.253:8081/repository/demo-repo/</url>
-            <!--<url>http://157.245.38.33:8081/repository/demo-repo/</url>-->
+            <!--<url>http://10.10.0.253:8081/repository/demo-repo/</url>-->
+             <url>http://157.245.38.33:8081/repository/demo-repo/</url>
         </repository>
     </distributionManagement>
 

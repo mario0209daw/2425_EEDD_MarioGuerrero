@@ -1,3 +1,5 @@
+package com.guerrero.mario.UtilidadesMaven;
+
 public class UtilidadesTexto {
 
     // version 1.1 de la libreria
