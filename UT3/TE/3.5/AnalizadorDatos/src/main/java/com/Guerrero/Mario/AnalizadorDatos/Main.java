@@ -32,6 +32,7 @@ public class Main {
                     break;
                 case 3:
                     t = false;
+                    System.out.println("¡Gracias por usar el Analizador de Datos! Hasta pronto");
                     break;
                 default:
                     System.out.println("No ha ingresado un numero de correspondiente a las opciones");
