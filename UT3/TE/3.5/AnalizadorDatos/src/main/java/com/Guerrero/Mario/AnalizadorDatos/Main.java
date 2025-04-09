@@ -1,6 +1,7 @@
 package com.Guerrero.Mario.AnalizadorDatos;
 
 import java.util.Scanner;
+
 import com.VazquezAlberto.UtilidadesNumeros;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
         Boolean t = true;
         int opcion, num;
         String frase;
-        while (t){
+        while (t) {
             System.out.println("""
                     1. ANALISIS NUMÉRICO
                     2. ANALISIS DE TEXTO
@@ -17,13 +18,14 @@ public class Main {
                     
                     ELIGE EL NUMERO ASOCIADO A LA OPCION QUE QUIERE HACER:""");
             opcion = sc.nextInt();
-            switch (opcion){
+            switch (opcion) {
                 case 1:
                     System.out.println("introduzca un numero:");
                     num = sc.nextInt();
                     AnalizadorNumerico.analisisNUM(num);
                     break;
                 case 2:
+                    sc.nextLine();
                     System.out.println("introduzca una frase:");
                     frase = sc.nextLine();
                     AnalizadorTexto.analisisiTex(frase);

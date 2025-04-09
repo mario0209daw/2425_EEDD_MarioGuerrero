@@ -3,9 +3,9 @@ package com.Guerrero.Mario.AnalizadorDatos;
 import java.util.Scanner;
 
 public class AnalizadorTexto {
-    public static void analisisiTex(String fr){
+    public static void analisisiTex(String fr) {
         String palindromo = "NO";
-        if (com.VazquezAlberto.UtilidadesTexto.esPalindromo(fr)){
+        if (com.VazquezAlberto.UtilidadesTexto.esPalindromo(fr)) {
             palindromo = "SI";
         }
 

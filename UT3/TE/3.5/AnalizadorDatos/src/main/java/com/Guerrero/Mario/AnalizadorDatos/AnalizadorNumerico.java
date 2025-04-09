@@ -17,8 +17,8 @@ public class AnalizadorNumerico {
 
         System.out.println("Analisis del numero " + num);
         System.out.println("¿Es par? " + par);
-        System.out.println("¿Es par? " + impar);
-        System.out.println("¿Es par? " + primo);
+        System.out.println("¿Es impar? " + impar);
+        System.out.println("¿Es primo? " + primo);
         System.out.println("Factorial : " + com.VazquezAlberto.UtilidadesNumeros.factorial(num));
         System.out.println("Divisores : " + com.VazquezAlberto.UtilidadesNumeros.devolverDivisores(num));
         System.out.println("¿Es perfecto? " + perfecto);
